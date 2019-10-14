@@ -69,7 +69,7 @@ func writeFile(filename string, outf *os.File) (err error) {
 	enc := base64.NewEncoder(base64.StdEncoding, outf)
 
 	for {
-		b = make([]byte, 50)
+		b = make([]byte, 72)
 
 		_, err := inf.Read(b)
 		if err == io.EOF {
